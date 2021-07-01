@@ -8,11 +8,8 @@ Python entrance test - Kyanon Digital
 ---
 
 - [1| Giới thiệu](#giới-thiệu)
-- [2| Cấu trúc tập tin](#cấu-trúc-tập-tin)
-- [3| Tiêu chí đánh giá chất lượng](#tiêu-chí-đánh-giá-chất-lượng)
-- [Giải thuật](#giải-thuật)
-- [Thực nghiệm](#thực-nghiệm)
-- [Screenshots](#screenshots)
+- [2| Cài đặt](#cài-đặt)
+- [3| Usage](#usage)
 
 ---
 
@@ -51,7 +48,7 @@ entrace_test_to_do_api
 ```
 
 
-Trong đó:
+**Trong đó**:
 + Gồm 3 app: 
 	+ user_auth: Dùng để thực hiện tính năng signup & signin 
 
@@ -133,7 +130,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-** Đảm bảo là database đang chạy
+> Đảm bảo là database đang chạy
 
 ## 3| Usage
 
@@ -146,23 +143,26 @@ Database có đã sẵn các dữ liệu sau:
 + 5 record todo
 
 **User**
-1| admin:12345678
-2| user1:123456
-3| user2:123456
-4| user3:123456
+
+| STT | username | password |
+|-----|----------|----------|
+| 1   | admin    | 12345678 |
+| 2   | user1    | 123456   |
+| 3   | user2    | 123456   |
+| 4   | user3    | 123456   |
 
 ### b| API diagrams
 
 ```text
-/admin						# Admin site
+/admin					# Admin site
 /api/v1/auth/signup			# POST:   [API 1] Sign up for a new user
 /api/v1/auth/signin			# POST:   [API 2] Sign in
 /api/v1/todo				# GET:    [API 6] Get all todos
 /api/v1/todo				# POST:   [API 3] Add a new todo
-/api/v1/todo/<pk:int>		# GET:    [API 7] Get a todo
-/api/v1/todo/<pk:int>		# POST:   [API 9] Assign a todo to specific user
-/api/v1/todo/<pk:int>		# PUT:    [API 4] Update a todo
-/api/v1/todo/<pk:int>		# DELETE: [API 5] Delete a todo
+/api/v1/todo/<pk:int>			# GET:    [API 7] Get a todo
+/api/v1/todo/<pk:int>			# POST:   [API 9] Assign a todo to specific user
+/api/v1/todo/<pk:int>			# PUT:    [API 4] Update a todo
+/api/v1/todo/<pk:int>			# DELETE: [API 5] Delete a todo
 /api/v1/user				# GET:    [API 8] Get all user
 
 ```
