@@ -7,9 +7,9 @@ Python entrance test - Kyanon Digital
 
 ---
 
-- [1| Giới thiệu](#giới-thiệu)
-- [2| Cài đặt](#cài-đặt)
-- [3| Usage](#usage)
+- [1| Giới thiệu](#1-giới-thiệu)
+- [2| Cài đặt](#2-cài-đặt)
+- [3| Usage](#3-usage)
 
 ---
 
