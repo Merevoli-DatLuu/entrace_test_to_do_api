@@ -24,9 +24,7 @@ entrace_test_to_do_api
 │       entrace_test_to_do_api.sql
 │
 └───todo_api
-    │   db.sqlite3
     │   manage.py
-    │   output.txt
     │
     ├───todo_api
     │   │   asgi.py
