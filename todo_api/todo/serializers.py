@@ -14,15 +14,20 @@ class TodoUpdateSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'name': {'required': False},
             'description': {'required': False},
-            'date_of_completion': {'required': False},
-            'user_id': {'required': False},
+            'date_of_completion': {'required': False}
         }
 
     def validate(self, attrs):
         return super().validate(attrs)
 
     def update(self, instance, validated_data):
-        for field_name in ('name', 'description', 'date_of_completion', 'user_id'):
+
+        # Không thay đổi user_id
+        if validated_data.get('user_id'):
+            validated_data['user_id'] = getattr(instance, 'user_id')
+
+        # Không có những field này thì giữ nguyên
+        for field_name in ('name', 'description', 'date_of_completion'):
             if not validated_data.get(field_name):
                 validated_data[field_name] = getattr(instance, field_name)
 
