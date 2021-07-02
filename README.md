@@ -48,23 +48,23 @@ entrace_test_to_do_api
 
 **Trong đó**:
 + Gồm 3 app: 
-	+ user_auth: Dùng để thực hiện tính năng signup & signin 
+	+ **user_auth**: Dùng để thực hiện tính năng signup & signin 
 
 	`API 1`, `API 2`
-	+ user: Dùng để thực hiện việc truy xuất thông tin user
+	+ **user**: Dùng để thực hiện việc truy xuất thông tin user
 
 	`API 8`
-	+ todo: Dùng để thực hiện các tính năng với đối tượng todo
+	+ **todo**: Dùng để thực hiện các tính năng với đối tượng todo
 
 	`API 3`, `API 4`, `API 5`, `API 6`, `API 7`, `API 8`
 + Database file: ```database\entrace_test_to_do_api.sql``` (MySQL)
 
 ### b| Các Package sử dụng
-+ pipenv
-+ django
-+ djangorestframework
-+ djangorestframework-simplejwt
-+ mysqlclient
++ `pipenv`
++ `django`
++ `djangorestframework`
++ `djangorestframework-simplejwt`
++ `mysqlclient`
 
 ### c| Tính năng của API
 1. **API 1 / SIGN-UP**: API cho phép người dùng mới sign-up vào hệ thống. 
@@ -103,6 +103,7 @@ python -m pipenv shell
 ```
 
 **4. Cài đặt Database**
+
 Import file ```database\entrace_test_to_do_api.sql``` vào hệ quản trị MySQL (Có thể sử dụng công cụ phpMyAdmin để quản lý MySQL)
 
 **Thông tin database**
@@ -117,7 +118,7 @@ Import file ```database\entrace_test_to_do_api.sql``` vào hệ quản trị MyS
 **5. Khởi chạy server**
 
 
-+ Kiểm tra mỉgrations
++ Kiểm tra migrations
 ```python
 python manage.py makemigrations
 python manage.py migrate
