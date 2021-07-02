@@ -14,7 +14,8 @@ class TodoUpdateSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'name': {'required': False},
             'description': {'required': False},
-            'date_of_completion': {'required': False}
+            'date_of_completion': {'required': False},
+            'user_id': {'required': False}
         }
 
     def validate(self, attrs):
