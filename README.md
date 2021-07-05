@@ -153,18 +153,20 @@ Database có đã sẵn các dữ liệu sau:
 ### b| API diagrams
 
 ```text
-/admin					# Admin site
-/api/v1/auth/signup			# POST:   [API 1] Sign up for a new user
-/api/v1/auth/signin			# POST:   [API 2] Sign in
-/api/v1/todo				# GET:    [API 6] Get all todos
-/api/v1/todo				# POST:   [API 3] Add a new todo
-/api/v1/todo/<pk:int>			# GET:    [API 7] Get a todo
-/api/v1/todo/<pk:int>			# POST:   [API 9] Assign a todo to specific user
-/api/v1/todo/<pk:int>			# PUT:    [API 4] Update a todo
-/api/v1/todo/<pk:int>			# DELETE: [API 5] Delete a todo
-/api/v1/user				# GET:    [API 8] Get all user
+/admin/					# Admin site
+/api/v1/auth/signup/			# POST:   [API 1] Sign up for a new user
+/api/v1/auth/signin/			# POST:   [API 2] Sign in
+/api/v1/todo/				# GET:    [API 6] Get all todos
+/api/v1/todo/				# POST:   [API 3] Add a new todo
+/api/v1/todo/<pk:int>/			# GET:    [API 7] Get a todo
+/api/v1/todo/<pk:int>/			# POST:   [API 9] Assign a todo to specific user
+/api/v1/todo/<pk:int>/			# PUT:    [API 4] Update a todo
+/api/v1/todo/<pk:int>/			# DELETE: [API 5] Delete a todo
+/api/v1/user/				# GET:    [API 8] Get all user
 
 ```
 
+> Do `APPEND_SLASH = False` nên phải có `/` ở cuối URL
+
 ### c| API Document
-[API Doc](https://github.com/Merevoli-DatLuu/entrace_test_to_do_api/wiki/API-Documentation-V1)
+[API Document](https://github.com/Merevoli-DatLuu/entrace_test_to_do_api/wiki/API-Documentation-V1)
